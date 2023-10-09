@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <button class="modal_toggle" data-modal="modalOne">見積1のモーダルを開く</button>
+        <button class="modal_toggle" data-modal="modalTwo">見積2のモーダルを開く</button>
+
+        <form id="estimate_form">
+
+            <div class="modal" id="modalOne">
+                <div class="modal_container">
+                    <div class="modal_close">×</div>
+                    <h1>見積1</h1>
+
+                    <input type="radio" name="first" value="0" id="estimate_0">
+                    <label for="estimate_0">¥0</label>
+        
+                    <input type="radio" name="first" value="1000" id="estimate_1">
+                    <label for="estimate_1">¥1,000</label>
+        
+                    <input type="radio" name="first" value="2000" id="estimate_2">
+                    <label for="estimate_2">¥2,000</label>
+        
+                    <input type="radio" name="first" value="3000" id="estimate_3">
+                    <label for="estimate_3">¥3,000</label>
+                </div>
+            </div>
+
+            <div class="modal" id="modalTwo">
+                <div class="modal_container">
+                    <div class="modal_close">×</div>
+                    <h1>見積2</h1>
+
+                    <input type="radio" name="second" value="0" id="estimate_second_0">
+                    <label for="estimate_second_0">¥0</label>
+        
+                    <input type="radio" name="second" value="1000" id="estimate_second_1">
+                    <label for="estimate_second_1">¥1,000</label>
+        
+                    <input type="radio" name="second" value="2000" id="estimate_second_2">
+                    <label for="estimate_second_2">¥2,000</label>
+        
+                    <input type="radio" name="second" value="3000" id="estimate_second_3">
+                    <label for="estimate_second_3">¥3,000</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit">
+            <!-- <button id="btn">送信</button> -->
+        </form>
+
+        <p id="total">Total: ¥0</p>
+        <p id="log"></p>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
